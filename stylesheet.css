@@ -1,0 +1,80 @@
+body, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background-color:#d0f5e5fd; 
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.container {
+	display: flex;
+}
+
+.sidenav {
+	background-color: #6cf78efd; 
+	width: 25%;
+	height: 100vh; 
+	position: fixed;
+	overflow: auto;
+}
+
+.main {
+	flex: 1; 
+	padding: 20px;
+	background-color: #d0f5e5fd; 
+}
+
+.sidenav a.active {
+	background-color: #82c703; 
+	color: #03113b; 
+}
+
+.sidenav a {
+	display: block;
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.sidenav a:hover:not(.active) {
+	background-color: #25b1b1;
+	color: #2bbd96fd; 
+}
+
+.header {
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.profile-image {
+	width: 200px;
+	border-radius: 45%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+	line-height: 1.6;
+	text-align: center;
+}
+
+::selection {
+	background-color: #04AA6D;
+	color: #5db4b4; 
+}
